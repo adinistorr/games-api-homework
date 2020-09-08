@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games API Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <header class="header shadow-lg p-3">
+            <nav class="navbar navbar-light d-flex justify-content-between flex-wrap w-100">
+                <a class="navbar-brand ml-lg-5 text-light">Games API Homework</a>
+                <input id="reset" type="button" class="bg-light rounded shadow-sm border-0 small" value="&#x21ba; Reset">
+            </nav>
+        </header>
+    
+        <div id="main-page" class="content container-fluid d-flex mt-2 flex-grow-1">
+            <sidebar class="sidebar col-4 border border-secondary rounded mr-sm-2"></sidebar>
+            <main class="container main-content col-8 border border-secondary rounded"></main>
+        </div>
+        
+        <div id="game-details" class="overlay d-none"></div>
+        
+        <footer class="footer text-center mt-3 mb-0 bg-warning p-2 shadow">Games API Homework</footer>
+    </div>
+    
+    <script src="scripts/game.model.js"></script>
+    <script src="scripts/form-component.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

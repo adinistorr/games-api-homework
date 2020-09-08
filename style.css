@@ -1,0 +1,77 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    background-image: url('background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.form-add-game {
+    top: 0;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/* ========== overlay ========= */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0s;
+}
+
+.overlay a {
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #010101;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    font-size: 1.25em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.game-details-content {
+    margin-top: 5em;
+    padding: 1.5em 3em;
+}
+
+.game-picture {
+    height: 250px;
+    min-width: 250px;
+    object-fit: scale-down;
+}
+
+.game-title {
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
